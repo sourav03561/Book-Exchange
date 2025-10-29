@@ -1,0 +1,24 @@
+.profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.profile-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.profile-input:focus {
+  border-color: #6366f1;       /* Indigo */
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.profile-input.full {
+  grid-column: 1 / span 2;     /* Make it take both columns */
+}

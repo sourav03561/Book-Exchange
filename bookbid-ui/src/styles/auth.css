@@ -1,0 +1,86 @@
+/* Page layout */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9; /* slate-100 */
+  padding: 16px;
+}
+
+/* Card */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 32px 28px;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Title & subtitle */
+.auth-title {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: #1e293b;
+}
+.auth-sub {
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Inputs */
+.auth-input {
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color .15s, box-shadow .15s;
+}
+.auth-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,.15);
+}
+
+/* Button */
+.auth-btn {
+  height: 44px;
+  background: #6366f1;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background .15s, transform .05s;
+}
+.auth-btn:hover { background: #4f46e5; }
+.auth-btn:active { transform: translateY(1px); }
+
+/* Error message */
+.auth-error {
+  margin: 0;
+  color: #dc2626;
+  font-size: 14px;
+  text-align: center;
+}
+/* Extra styles for Register page book section */
+.auth-books { margin-top: 4px; font-size: 14px; }
+.auth-books-row { display: flex; gap: 8px; }
+.auth-books-list { font-size: 12px; margin-top: 6px; color: #475569; }
+
+.auth-btn.ghost {
+  background: #fff;
+  color: #6366f1;
+  border: 1px solid #cbd5e1;
+}
+.auth-btn.ghost:hover { background: #f1f5f9; }

@@ -1,0 +1,111 @@
+/* ---- Layout ---- */
+.mybooks {
+  max-width: 680px;             /* narrower = more premium */
+  margin: 32px auto 64px;
+  padding: 10px 16px;
+  color: #111827;
+  font: 15px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: #f6f7fb;          /* subtle paper */
+  border-radius: 1rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .2px;
+  margin: 8px 0 18px;
+}
+
+/* ---- Input group (one control) ---- */
+.input-row {
+  display: flex;
+  justify-content: center;
+  gap: 0;                        /* merged */
+  margin: 0 0 18px;
+}
+
+.input {
+  flex: 1;
+  min-width: 240px;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #d9dbe3;
+  border-right: 0;
+  border-radius: 10px 0 0 10px;
+  background: #fff;
+  transition: border-color .15s, box-shadow .15s;
+}
+.input:focus {
+  outline: none;
+  border-color: #635bff;
+  box-shadow: 0 0 0 3px rgba(99,91,255,.15);
+}
+
+.btn {
+  height: 36px;
+  padding: 0 14px;
+  width: 100px;
+  border-radius: 999px;
+  background: #635bff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s, transform .05s, box-shadow .15s;
+}
+.btn:hover { background:#564df7; box-shadow: 0 6px 18px rgba(99,91,255,.25); }
+.btn:active { transform: translateY(1px); }
+
+.btn.pill {                        /* for right-side “Remove” */
+  border-radius: 999px;
+  height: 36px;
+  padding: 0 14px;
+  border: none;
+}
+.btn.red { background:#e11d48; }
+.btn.red:hover { background:#be123c; }
+
+/* ---- List ---- */
+.book-list { margin: 0; padding: 10;}
+
+/* Card: compact, airy, consistent rhythm */
+.book-item {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  background: #ffffff;
+  border: 1px solid #e7e8ef;
+  border-radius: 14px;
+  padding: 12px;
+  margin: 12px 0;
+  box-shadow: 0 1px 0 rgba(16,24,40,.03);
+  transition: box-shadow .15s, transform .05s;
+}
+.book-item:hover { box-shadow: 0 10px 24px rgba(16,24,40,.08); }
+
+.cover {
+  width: 72px; height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #eceff3;
+  background: #f2f4f7;
+}
+
+.info { min-width: 0; }
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+.meta { color:#6b7280; font-size: 13.5px; }
+
+/* Mobile */
+@media (max-width: 560px) {
+  .mybooks { margin-top: 16px; }
+  .book-item { grid-template-columns: 60px 1fr; grid-template-rows: auto auto; }
+  .cover { width: 60px; height: 88px; }
+  .actions { grid-column: 1 / -1; margin-top: 6px; }
+  .btn.pill { height: 34px; }
+}
