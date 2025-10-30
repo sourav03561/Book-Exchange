@@ -1,3 +1,5 @@
+![Image](https://github.com/user-attachments/assets/1d029c6a-6d62-4fd3-8323-6c4ed41fbe45)
+
 # 📚 Book Exchange Platform (BookBid)
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/sourav03561/Book-Exchange)
